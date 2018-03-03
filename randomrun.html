@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<!--
+
+
+Flooby Badoop
+July 2015
+Random Shadowrun Generator
+	
+	
+-->
+
+ <head>
+ 
+ <script>
+	
+	
+  function randomrun() {
+   var employers = ["Horizon", "Wuxing", "Shiawase", "Evo", "Ares", "Renraku", "Mitsuhama", "Aztechnology", "SpinGlobal", "Saeder-Krupp", "Manadyne", "Eastern Tiger Corporation", "Sony", "DocWagon", "Yakashima", "Yokogawa", "Telestrian Industries", "Amalgamated Studios", "Regency Megamedia", "DeMeKo", "Lone Star", "Meridonial Argonomics", "Hildebrant-Kleinfort-Bernal", "Zeta-ImpChem", "Frankfurter Bankverein", "Universal Omnitech", "Gaeatronics", "Regulus Joint Industries", "Monobe", "Khouang Combine", "Chalmers and Cole", "a single-A corp", "some unrated corp", "a government agency", "a foreign government", "a policlub", "the Yakuza", "the Mafia", "the Vory", "a Triad", "a religious group", "a gang", "a politician", "a political party", "a sports team", "a secret society", "a celebrity", "an independently wealthy person", "a university", "an eccentric researcher", "a dragon", "a free spirit", "an AI", "the Neo-A's", "a fellow shadowrunner", "an anonymous client"] ;
+   var employer = employers[Math.floor(Math.random() * employers.length) ];
+   var meets = ["at a shooting range", "at a golf course", "at the dockyard", "at a dive bar", "at a sports bar", "at a nice bar", "at an exclusive lounge", "at a nightclub", "at a country club", "at a motel", "at a hotel", "at a luxury hotel", "at a coffin motel", "at a rural home", "in the wilderness", "in a barrens squat", "in, bear with me here, the sewers of all places,", "at a fast food joint", "at a chain restaurant", "at a fancy restaurant", "on a boat", "on a bus", "in a matrix grid", "in a matrix club", "in a matrix casino", "in an MMO", "in a private Matrix host", "at a casino", "in an office building", "in a museum", "at the nearby military base", "in a hideout outside town", "in a place of worship", "at a university", "at their local headquaters",];
+   var meet = meets[Math.floor(Math.random() * meets.length) ];
+   var jobs = [" a datasteal.", " an extraction of a willing target.", " an extraction of an unwilling target.", " a heist on an advanced prototype.", " sabotage on a host.", " the demolition of some infrastructure.", " wetwork.", " a misdirection.", " a job in the wilderness.", " a delivery.", " a blackmail attempt.", " an insertion.", " the protection of an important asset.", " the retrieval of a valuable object.", " a job requiring persausive skills.", " an arson job.", " an assualt on a compound.", " finding a missing person."];
+   var job = jobs[Math.floor(Math.random() * jobs.length) ];
+   var payments = [" huge, but the job's practically suicide.", " big, but the job is risky.", " average, but so is the job.", " okay, but nothing to write home about.", " low, chummer, but the job's a milk run."];
+   var pay = payments[Math.floor(Math.random() * payments.length) ];
+   document.getElementById("randomrunb").textContent = "Hey, got a job for you. A Johnson on behalf of " + employer + " wants to meet " + meet + " to dicuss" + job + " The pay's " + pay ; 
+   
+}
+
+function details() { 
+  var antagonists = ["Horizon", "Wuxing", "Shiawase", "Evo", "Ares", "Renraku", "Mitsuhama", "Aztechnology", "SpinGlobal", "Saeder-Krupp", "Manadyne", "Eastern Tiger Corporation", "Sony", "DocWagon", "Yakashima", "Yokogawa", "Telestrian Industries", "Amalgamated Studios", "Regency Megamedia", "DeMeKo", "Lone Star", "Meridonial Argonomics", "Hildebrant-Kleinfort-Bernal", "Zeta-ImpChem", "Frankfurter Bankverein", "Universal Omnitech", "Gaeatronics", "Regulus Joint Industries", "Monobe", "Khouang Combine", "Chalmers and Cole", "a single-A corp", "some unrated corp", "a government agency", "a foreign government", "a policlub", "the Yakuza", "the Mafia", "the Vory", "a Triad", "a religious group", "a gang", "a politician", "a political party", "a sports team", "a secret society", "a celebrity", "an independently wealthy person", "a university", "an eccentric researcher", "a dragon", "a free spirit", "an AI", "the Neo-A's", "a fellow shadowrunner", "an anonymous client"] ;
+  var payments = ["with a certified credstick.", "with a certified credstick.", "from an escrow account.", "from an escrow account.", "in corp script.", "in barter." ] ;
+  var antagonist = antagonists[Math.floor(Math.random() * antagonists.length) ];
+  var payment = payments[Math.floor(Math.random() * payments.length) ];
+  document.getElementById("details").textContent = "Looks like you'll be up against " + antagonist + "." + " The Johnson would prefer to pay "  + payment ;
+}
+   
+  </script>
+  
+  <title>Random Shadowrun Generator</title>
+  <meta charset = "utf-8" >
+  <link rel="stylesheet" href="randomrun.css">
+  <link rel="shortcut icon" href="whatever-your-site's-icon-is-named.ico" type="image/x-icon"/>
+  
+  <!-- [if lt IE 9 ]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ </head>
+ 
+ <body>
+ 
+ <br>
+ <br>
+ <br>
+ 
+ <div id="button1">
+  <input type="button" value="Contact Your Fixer" onclick="randomrun()" />
+  </div>
+  <br>
+  <br>
+  <div id="randomrunb"></div>
+
+ 
+ <br>
+ <br>
+ <br>
+ 
+ 
+ <div id="button2">
+  <input type="button" value="Can I Get Some More Details?" onclick="details()" />
+ <div>
+ <br>
+ <br>
+  <div id="details"></div>
+ </body>
+ 
+</html>
