@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<!--
+
+
+Flooby Badoop
+March 2018
+Random Shadowrun Generator
+	
+	
+-->
+
+ <head>
+ 
+ <script>
+	
+	
+  function randomperson() {
+   var heights = ["a tall, ", "a short, ", "an average-height, ", "a very tall, ", "an unusually short, "];
+   var height = heights[Math.floor(Math.random() * heights.length) ];
+   var weights = ["", "fat ", "lean ", "muscular ", "gaunt ", "skinny ", "massively-muscled "];
+   var weight = weights[Math.floor(Math.random() * weights.length) ];
+   var genders = ["Male ", "Female "];
+   var gender = genders[Math.floor(Math.random() * genders.length) ];
+   var metatypes = ["Human", "Elf", "Dwarf", "Orc", "Troll"];
+   var metatype = metatypes[Math.floor(Math.random() * metatypes.length) ];
+   var ethnicities = ["Caucasian", "Afro", "Asian", "Middle Eastern", "Hispanic", "Afro-Caucasian", "Afro-Asian", "Afro and Middle Eastern", "Afro-Hispanic", "Asian-Caucasian", "Asian and Middle Eastern", "Asian and Hispanic", "Middle Eastern and Hispanic"];
+   var ethnicity = ethnicities[Math.floor(Math.random() * ethnicities.length) ];
+   var ages = ["teens", "early to mid twenties", "late twenties, early thirties", "mid-thirties or early forties", "forties or fifties", "fifties or sixties", "seventies, or even older"];
+   var age = ages[Math.floor(Math.random() * ages.length) ];
+   var clothings = ["the latest trend in designer fashion", "a sharp-fitting business suit", "a sportcoat with dress pants", "a military uniform", "a work uniform", "a wifebeater with blue jeans, held by a belt", "disposable synthwear", "a t-shirt with shorts", "a tank top with cargo pants", "a hoodie with sweatpants", "holowear showing a basic, sparkling pattern", "holowear that looks like the night sky", "holowear in an ever-shifting miasma of multi-colored lights", "a tank top with track pants", "a skimpy-looking, risque outfit", "a leather jacket with jeans", "an off-the-rack business outfit", "a culturally-themed business outfit", "religious garb", "a costume", "a traditional cultural outfit", "a steampunk outfit", "a sports jersey, for a local team", "a sports jersey, for a team not from around here", "an expensive-looking formal outfit", "a button-down shirt and dress pants"];
+   var clothing = clothings[Math.floor(Math.random() * clothings.length) ];
+   var accessories = ["", "", "", ", and a pair of mirrorshades", ", and a pair of designer shades", ", and a pair of designer glasses", ", and have several biolumiscent tatoos", ", and have a company's logo for a biolumiscent tatoo on the back of their neck", ", and have several, visbile tribal tatoos", ", and have several, visbile tatoos of various images", ", someone's name tatooed on them", ", and have a lot of neo-goth flair", ", and are carrying a briefcase", ", and are carrying luggage", ", and appear to have had a lot of cheap, or poorly-done cosaugs", ", and have some minor animal cosaugs", ", and have some signifigant animal cosaugs", ", and have the latest trend in cosaugs", ", and have some expensive-looking jewelery", ", and have some religious religious symbol on a necklace", ", and have a pair of obvious cybereyes installed. They look utilitarian, which makes them kind of creepy", ", and have a pair of synthetic cybereyes installed, though it's hard to tell, since they look pretty close to real eyes", ", and they have a pair of obvious cyberears installed. They look utilitarian, and pretty weird because of it", ", and they have some obvious cyberlimbs installed", ", and they have some synthetic cyberlimbs installed, though it's hard to tell, since they look close to the real things", ", and they have some obvious, unnatural-looking bioaugs done", ", and they have both their eyes and ears replaced with obvious cyber, making them look kind of creepy", ", and they have their hair dyed bright, neon red", ", and they have their hair dyed bright, neon green", ", and they have their hair dyed bright, neon pink", ", and their hair is biolumiscent", ", and their hair is in a wacky style", ", and their hair is in a trendy style"];
+   var accesory = accessories[Math.floor(Math.random() * accessories.length) ];
+   var activities = ["lost in AR", "preoccupied with their accessories", "in a rush", "on their way to work", "nervous about something", "pushing a baby-carriage", "talking on a comm-call", "sipping on kaf", "looking up at the clouds", "leaning up against the wall", "sipping kaf while sitting outside a cafe", "leisurely eating a meal", "chatting with someone", "arguing with someone", "laughing at something", "having an apparantly hilarious conversation with someone", "very tired, and walking with a sluggish pace", "staring at someone", "staring at something", "smoking a cigarette", "chewing some corp candy", "chewing some snuff", "drinking from a flask", "watching the news on a nearby trid set", "watching an urban brawl game on a nearby trid set", "watching a popular sitcom on a nearby trid set", "watching a soap opera on a nearby trid set", "watching a long-running cartoon on a nearby trid set", "watching a stand-up comedian on a nearby trid set", "watching an advertisement on a nearby trid set", "watching a street performer", "having a meeting with someone at a cafe, discussing important business", "snarfing down some fast food", "digging into some food at a cafe", "reading a dead-tree book", "lost in a trance. You can't tell whether it's drug-induced, technological, astral, or none of the above", "sipping on a soda", "sipping on an energy drink", "slotting a BTL chip", "doing some drugs, and they don't look prescription", "very angry about something", "sitting down on the street", "sobbing into their hands", "stumbling around, probably drunk or high", "snacking on some chips", "eating candy", "drinking from a water bottle", "jogging at a brisk pace", "standing against a wall in an alleyway, looking both ways often", "twirling a butterfly knife", "doing a street performance", "creating some street art", "running and darting their head around, probably playing an AR game", "fixated on a public ARO", "squinting at a city map in AR", "munching on a doughnut", "in a fistfight with someone", "listening to whatever's pumping through their headphones", "eating an apple", "skateboarding down the street", "shooting some hoops at a makeshift basket", "busy washing their car", "working on a motorcycle", "leaning on a motorcycle, with their arms folded, scowling at anyone who looks their way", "standing by a door, either waiting for someone, or guarding it", "doing some window shopping", "walking while carrying a bunch of shopping bags", "walking a dog", "sitting in a car, waiting for traffic to pick up", "sitting in a cab", "dancing to some beats coming from a stereo", "listening to a street preacher", "spouting religious rhetoric from a street corner", "making aggresive attempts to promote a product from a booth", "protesting outside a corporate office", "protesting outside a government office", "protesting outside a religious building", "protesting outside a university", "playing frisbee with someone", "spraypainting grafitti", "tossing rocks at empty bottles down an alley", "writing something down on paper", "in the middle of mugging someone", "escpaing from a building with alarms going off", "look like they're on a date, and gazing into their companion's eyes", "admiring the scenery"];
+   var activity = activities[Math.floor(Math.random() * activities.length) ];
+   document.getElementById("randompersonb").textContent = "You see " + height + weight + gender + metatype + ", with " + ethnicity + " features, probably in their " + age + "." + " They're wearing " + clothing + accesory + ". It looks like they're " + activity + "."; 
+   
+}
+   
+  </script>
+  
+  <title>Random Shadowrun Generator</title>
+  <meta charset = "utf-8" >
+  <link rel="stylesheet" href="randomperson.css">
+  <link rel="shortcut icon" href="whatever-your-site's-icon-is-named.ico" type="image/x-icon"/>
+  
+  <!-- [if lt IE 9 ]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ </head>
+ 
+ <body>
+ 
+ <a href="index.html">Go Back</a>
+ 
+ <br>
+ <br>
+ <br>
+ 
+ <div id="button1">
+  <input type="button" value="Do Some People Watching" onclick="randomperson()" />
+  </div>
+  <br>
+  <br>
+  <div id="randompersonb"></div>
+ </body>
+ 
+</html>
