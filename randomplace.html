@@ -56,7 +56,7 @@ function randomrestaurant() {
    var food = foods[Math.floor(Math.random() * foods.length) ];
    var drinks = ["features an excellent wine list, picked from their carefully preserved collection", "has an interesting list of fun cocktail mixes", "has a large list of craft beer, with an equally large selection of good stuff on tap", "has a superb list of whiskey, scotch, and bourbon", "has a lot of rare liquors you don't find at most places", "has a short list of common beverages, with one or two things worth ordering", "is a pretty pathetic list of common things you can get anywhere" ];
    var drink = drinks[Math.floor(Math.random() * drinks.length) ];
-   var peoples = ["execs from the nearby offices", "politicians hosting fundraisers", "people having a romantic date night", "people from a particular social club", "people from a particular corp", "people from a particular policlub", "the housewives of rich execs", "corp drones pretending they have enough money to be"];
+   var peoples = ["execs from the nearby offices", "politicians hosting fundraisers", "people having a romantic date night", "people from a particular social club", "people from a particular corp", "people from a particular policlub", "the housewives of rich execs", "corp drones pretending they have enough money to be", "yuppies and rich kids", "athletes, especially for the local teams", "celebrities and media-types"];
    var people = peoples[Math.floor(Math.random() * peoples.length) ];
 
    document.getElementById("randomrestaurantb").textContent = name + " is " + type + " restaurant, with a corresponding atmosphere in the decoration, music, and AR. The food is " + food + ", while the drink menu " + drink + ". You'll usually find " + people + " here.";
