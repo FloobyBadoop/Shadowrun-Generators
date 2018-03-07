@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<!--
+
+
+Flooby Badoop
+March 2018
+Random Shadowrun Generator
+	
+	
+-->
+
+ <head>
+ 
+ <script>
+	
+	
+  function randombar() {
+   var adjectives = ["Sleepy", "Dreamy", "Cool", "Wiz", "Hot", "Lonely", "Mad", "Red", "Blue", "Green", "Yellow", "Orange", "Purple", "Gold", "Silver", "Black", "White", "Dancing", "Hop", "Neon", "Nova", "Good 'Ol", "Crazy", "Big", "Little", "Chrome", "Barley Working", "Hopp Scotch", "Foxy", "Triff", "Cozy", "Sweet", "Spicy", "Southern", "Frosty", "Frothy", "Tasty", "Yummy", "Flaming", "Tricky", "Cosmic", "Lonely", "Sodden", "Sleeping", "Spinning", "Silly", "Drunken", "Spacey", "Enchanting", "Astral", "Planar", "Cyber", "Electric", "Wired", "Lazy", "Happy", "Down South", "Sunny", "Metal", "", "", ""];
+   var adjective = adjectives[Math.floor(Math.random() * adjectives.length) ];
+   var nouns = ["Cat", "Dog", "Snake", "Rabbit", "Chicken", "Hen", "Doe", "Unicorn", "Hellhound", "Cockatrice", "Eagle", "Boar", "Bear", "Pig", "Horse", "Goat", "Dragon", "Lion", "Tiger", "Jaguar", "Owl", "Liger", "Daffodil", "Lady", "Woman", "Fool", "Boxer", "Glove", "Gauntlet", "Post", "Public House", "Microbrewery", "Eatery", "House of Meat", "Meadhall", "Tavern", "House", "Clover", "Cap", "Mug", "Flagon", "Growler", "Nook", "Shack", "Hideaway", "Inn", "Beer and Bakery", "Crab Shack", "House of Seafood", "Noodle Bar", "Deli and Bar", "Grill", "Hole", "Ditch", "Grove", "Loft", "Cottage", "Burger Bar", "Cafe and Bar"];
+   var noun = nouns[Math.floor(Math.random() * nouns.length) ];
+   var types = ["a dive bar", "an izakaya", "a sports bar", "a pub", "a microbrewery", "a lounge", "an exclusive lounge", "a bar and grill", "a karaoke bar", "a rap bar", "a rock bar", "an Awakened bar", "a dance bar", "a jazz bar", "a neo-goth bar", "a neo-tribal bar", "a trog bar", "a dwarf bar", "an elf bar", "a bar catering to expats", "a bar catering to off-duty soldiers", "a bar catering to wageslaves getting off from work", "a bar catering to execs coming for power lunches", "a bar that serves as the local watering hole"];
+   var type = types[Math.floor(Math.random() * types.length) ];
+   var drinks = ["only the cheapest, most common drinks", "a bad list of overpriced drinks", "an okay selection of drinks", "a great selection of drinks", "a famous drink menu, with some unique choices well worth the price" ];
+   var drink = drinks[Math.floor(Math.random() * drinks.length) ];
+   var foods = ["cheap, poorly prepared soy, not worth the plastic it's served on", "all soy, but tasty enough that it doesn't show", "mostly soy, with one or two real dishes", "all real, and delicious"];
+   var food = foods[Math.floor(Math.random() * foods.length) ];
+   var noteworthies = ["its relatively low prices", "its goofy regulars", "being a good place for a meet, with sound-proofed booths in the back", "being a good place to find low-level runners looking for work", "its eccentric owner", "one really weird item on the menu", "being a meeting place for spies", "being a hangout for the local gang", "being a front for a syndicate", "being a place where Johnsons from a particular corp like to meet"];
+   var noteworthy = noteworthies[Math.floor(Math.random() * noteworthies.length) ];
+   document.getElementById("randombarb").textContent = "The " + adjective + " " + noun + " is " + type + ". It's got " + drink + ", while the food is " + food + ". It's best known for " + noteworthy + "." ; 
+   
+}
+
+function randomclub() { 
+   var names = ["Epiphany", "Insomnia", "The Miracle", "Plur", "Discotechque Europa", "Ambrosia", "The Wizard", "The Wiz House", "The Triff Lounge", "Cabaret", "79", "Kactus", "Grapevine", "Hardcore House", "Strobe", "Space Age", "Schadenfreude", "The Skeleton", "The Jester", "Jump", "Nine Tails", "Lucky", "City", "The Bounce House", "Lovelace", "Razor", "Creation", "Exposure", "Dreamscape", "Altitude", "Bungalow", "Viva", "Tropicana", "Edge", "Nevermore", "Psyche", "Freak", "Last Call", "Caper", "Demense", "Journey"];
+   var name = names[Math.floor(Math.random() * names.length) ];
+   var types = ["a dance club", "an Awakened club", "a club and lounge", "a rave club", "a gay club", "a trog club", "an elf club", "a dwarf club"];
+   var type = types[Math.floor(Math.random() * types.length) ];
+   var features = ["a low quality, static-ridden sound system", "a dance floor big enough for a couple hundred people", "cozy booths in a soundproofed area away from the dance floor", "a bar with drinks that'll knock you off your hoop", "a reputation for having the crowd break out into a mosh pit"];
+   var feature = features[Math.floor(Math.random() * features.length) ];
+   var themes = ["sleek, modern theme, with lots multi-colored, gemoteric designs in AR", "a neo-tribal theme, with a rainforest look in AR", "no frills theme, with an easy to clean, utilitarian design - people come here to party hard", "a neo-goth theme, with dim lighting, gothic archicture, and horror movie monsters in AR", "a tropical theme, with beach waves crashing in trid displays, the feeling of a warm sun, and the smell of sea salt coming in through AR."];
+   var theme = themes[Math.floor(Math.random() * themes.length) ];
+   var musics = ["the latest and hottest in in dance beats", "top-forty pop remixed for dance beats", "experimental, arthouse music that's hard to enjoy if you're not a creative type. Or sober", "hardcore dance beats, we're talking a hundred and eighty BPM and up", "powernoiz. Prepare your eardrums", "rock, tuned for dancing", "live, from a garage band with synthsruments, to experimental singers", "hot Latin beats, remixed for dancing"];
+   var music = musics[Math.floor(Math.random() * musics.length) ];
+   document.getElementById("randomclubb").textContent = name + " is " + type + ". It's got "+ feature + ", and a " + theme + ". The music is mostly " + music + ".";
+}
+
+function randomrestaurant() { 
+   var names = ["Deck Chairs", "Cuisine by Carry", "501", "David's", "Sochi Romano", "Pashtounge", "Ganymede", "Allegra", "Atlas", "The Monarch", "The Lion", "Blossom", "Voss and Bonn", "The Big Bowl", "Shangri-La", "The White Elephant", "Later Days", "Nostalgia", "Lou-Anne's", "Elements", "The First Glass", "Tower", "Malcovich & Jyun-Barrington", "Midnight Oil", "Honey", "Soul", "Patio", "Stienbeck's", "Am Fluss", "Monte Vista"];
+   var name = names[Math.floor(Math.random() * names.length) ];
+   var types = ["a traditional American", "an Italian", "a steakhouse and new American", "an AzTex mix", "an Aztech", "a Salish", "an Elven", "a seafood", "a breakfast and brunch-oriented", "a French", "a German", "an Indian", "an Asian-fusion", "a sushi and Japanese", "a Thai", "a southern-fare", "a Mediterranean", "a Greek", "a Korean BBQ"];
+   var type = types[Math.floor(Math.random() * types.length) ];
+   var foods = ["expertly prepared, and the appetizers are delicious without being filling", "tapas-style, with small plates of delectable dishes", "overpriced, for what you get", "more style than taste", "loaded with healthy options, for those on a diet", "portioned for metahumans on request", "always served with a healthy helping of veggies", "usually covered in thick sauces, so make sure to specify that they come on the side if you're not partial to that", "pretty good, and they have a decadent dessert menu well-worth the look"];
+   var food = foods[Math.floor(Math.random() * foods.length) ];
+   var drinks = ["features an excellent wine list, picked from their carefully preserved collection", "has an interesting list of fun cocktail mixes", "has a large list of craft beer, with an equally large selection of good stuff on tap", "has a superb list of whiskey, scotch, and bourbon", "is themed after the cuisine", "has a short list of common beverages, with one or two things worth ordering", "is a pretty pathetic list of common things you can get anywhere" ];
+   var drink = drinks[Math.floor(Math.random() * drinks.length) ];
+   var peoples = ["execs from the nearby offices", "politicians hosting fundraisers", "people having a romantic date night", "people from a particular social club", "people from a particular corp", "people from a particular policlub", "the housewives of rich execs", "corp drones pretending they have enough money to be"];
+   var people = peoples[Math.floor(Math.random() * peoples.length) ];
+
+   document.getElementById("randomrestaurantb").textContent = name + " is " + type + " restaurant, with a corresponding atmosphere in the decoration, music, and AR. The food is " + food + ", while the drink menu " + drink + ". You'll usually find " + people + " here.";
+}
+   
+  </script>
+  
+  <title>Random Shadowrun Generator</title>
+  <meta charset = "utf-8" >
+  <link rel="stylesheet" href="randomplace.css">
+  <link rel="shortcut icon" href="whatever-your-site's-icon-is-named.ico" type="image/x-icon"/>
+  
+  <!-- [if lt IE 9 ]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ </head>
+ 
+ <body>
+ 
+ <a href="index.html">Go Back</a>
+ 
+ <br>
+ <br>
+ <br>
+ 
+ <div id="button1">
+  <input type="button" value="Go Bar Hopping" onclick="randombar()" />
+  </div>
+  <br>
+  <br>
+  <div id="randombarb"></div>
+
+ 
+ <br>
+ <br>
+ <br>
+ 
+ 
+ <div id="button2">
+  <input type="button" value="Go Club Hopping" onclick="randomclub()" />
+ <div>
+ <br>
+ <br>
+  <div id="randomclubb"></div>
+  
+  <br>
+  <br>
+  <br>
+  
+   <div id="button3">
+  <input type="button" value="Dine Out" onclick="randomrestaurant()" />
+ <div>
+ <br>
+ <br>
+  <div id="randomrestaurantb"></div>
+ </body>
+ 
+</html>

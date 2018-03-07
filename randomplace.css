@@ -1,0 +1,45 @@
+@font-face { font-family: "Cyberpunk Is Not Dead"; src: url('CIND.otf'); }
+
+body { text-align: center;
+       margin-left: 5%;
+	   margin-right: 5%;
+       color: #00FF00;
+       font-family: "Cyberpunk Is Not Dead", sans-serif;	   
+	   background: black; }
+	   
+input[type="button"]  { 
+
+background:    #000000;
+background:    -webkit-linear-gradient(#000000, #000000);
+background:    linear-gradient(#000000, #000000);
+border-radius: 1px;
+padding:       8px 20px;
+color:         #00FF00;
+display:       inline-block;
+font:          normal 700 25px/1 "Cyberpunk Is Not Dead", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px #000000; }
+
+#randombarb { margin-left: 5%;
+              margin-right: 5%; 
+			  font-size: 1.2em;}
+			  
+#randomclubb { margin-left: 5%;
+           margin-right: 5%; 
+		   font-size: 1.2em;}
+		   
+#randomrestaurantb { margin-left: 5%;
+           margin-right: 5%; 
+		   font-size: 1.2em;}
+		   
+ a { text-decoration: none;
+     font-size: 1.2em; 
+			
+}
+			
+a:visited { color: #00FF00 ; 
+}
+
+a:link { color: #00FF00 ;
+			}
+	
