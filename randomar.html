@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<!--
+
+
+Flooby Badoop
+March 2018
+Random Shadowrun Generator
+	
+	
+-->
+
+ <head>
+ 
+ <script>
+	
+	
+  function randomar() {
+   var sights = ["colored arrows, guiding a path toward a store that's selling something you searched for on the Matrix recently", "a bunch of spam popping up", "some vulgar street art that somehow slipped past detection", "street art of a cartoon character", "street art with an anti-corporate message", "street art with a political message", "some vandalzied AROs, changed to funny names, or adorned with crude drawings", "a pop up showing a deal for a fast food chain as you pass by one of their places", "a notification, sponspored by NewsNet, that a car-crash has occured nearby, and will probably cause traffic delays", "an ARO displaying a life-sized depiction of a politician running for office. It smiles, and tells you to have a nice day as you pass by.", "a notification, sponsored by NewsNet, showing the local forecast", "the latest business news highlights displayed outside an investment firm's window", "today's specials for a restaurant you pass by", "a notification from one of your 'business' applications; there's a hot new ticket for employment, and you should get in touch with your fixer about it", "notifications from your social media apps"];
+   var sight = sights[Math.floor(Math.random() * sights.length) ];
+   document.getElementById("randomarb").textContent = "In addition to the usual shop signs and ads, you see " + sight + "."; 
+   
+}
+   
+  </script>
+  
+  <title>Random Shadowrun Generator</title>
+  <meta charset = "utf-8" >
+  <link rel="stylesheet" href="randomar.css">
+  <link rel="shortcut icon" href="whatever-your-site's-icon-is-named.ico" type="image/x-icon"/>
+  
+  <!-- [if lt IE 9 ]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ </head>
+ 
+ <body>
+ 
+ <a href="index.html">Go Back</a>
+ 
+ <br>
+ <br>
+ <br>
+ 
+ <div id="button1">
+  <input type="button" value="Turn on AR" onclick="randomar()" />
+  </div>
+  <br>
+  <br>
+  <div id="randomarb"></div>
+ </body>
+ 
+</html>
