@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<!--
+
+
+Flooby Badoop
+March 2018
+Random Shadowrun Gang Generator
+	
+	
+-->
+
+ <head>
+ 
+ <script>
+	
+	
+  function randomss() {
+   var names = ["The Black Hand", "The Eldritch Coven", "The Servants of the Elders", "The Holy Covenant", "The Revanants of Vengeance", "The Alabast", "The Sanguine", "The Chosen", "The All-Seeing Eye", "The Whispers of Darkness", "The Shining Dawn", "The Rising Tide", "The Prophetic Keepers", "The Order of the Holy Virtue", "The Order of Our Blessed Lady", "The Amberdine" ];
+   var name = names[Math.floor(Math.random() * names.length) ];
+   var descriptions = ["are a cult devoted to an ancient God, one which they believe slumbers under the world, waiting for enough power to be awoken", "are servants of an insect spirit hive", "a coven of blood mages", "are a society of Toxic shamans", "are a society for the wealthy, which secretly manipulates world events to increase their power and influence", "are an Awakened society, devoted to finding arcane secrets", "are a society attempting to attain true immortality, in whatever way possible", "are a society attempting to remove magic from the world once and for all", "are a cult devoted to disgusting displays of violence and excess", "are a cult devoted to a bizzare spiritual belief", "are a cult devoted to The Horrors, and seek to summon them into this world"];
+   var description = descriptions[Math.floor(Math.random() * descriptions.length) ];
+   var features = ["are completely cooky. Their mad leader rules over a flock of the desperate, insane, or brainwashed.", "are, unbeknownst to its members, a scam to make its leader money.", "are a professional and dangerous organization, able to call on serious resources to further their agenda.", "enforce strict and draconian rules on its members, and have elaborate rites during their meetings", "are a complete joke - their leader is a moron, and its members are the definition of bumbling incompetence"];
+   var feature = features[Math.floor(Math.random() * features.length) ];
+   document.getElementById("randomgangb").textContent = name + " " + description + ". They " + feature + ".";
+   
+}
+   
+  </script>
+  
+  <title>Random Shadowrun Gang Generator</title>
+  <meta charset = "utf-8" >
+  <link rel="stylesheet" href="randomgang.css">
+  <link rel="shortcut icon" href="whatever-your-site's-icon-is-named.ico" type="image/x-icon"/>
+  
+  <!-- [if lt IE 9 ]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ </head>
+ 
+ <body>
+ 
+ <a href="index.html">Go Back</a>
+ 
+ <br>
+ <br>
+ <br>
+ 
+ <div id="button1">
+  <input type="button" value="Say the secret word" onclick="randomss()" />
+  </div>
+  <br>
+  <br>
+  <div id="randomgangb"></div>
+  
+ </body>
+ 
+</html>
